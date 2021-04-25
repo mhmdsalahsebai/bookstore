@@ -1,0 +1,201 @@
+/* 
+
+[table of content]
+
+1. import files
+2. global stylesheet
+3. main header
+4. page hero
+
+
+*/
+
+/* 2. global stylesheet */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: hsl(40, 23%, 97%);
+	color: hsl(41, 9%, 35%);
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, .text-dark {
+	color: hsl(42, 15%, 13%);
+}
+
+a {
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	width: 90vw;
+	margin: auto;
+}
+
+.button {
+	text-decoration: none;
+	padding: 0.5rem 1.5rem;
+	background-color: hsl(360, 64%, 55%);
+	border: 1px solid hsl(360, 64%, 55%);
+	border-radius: 0.25rem;
+	color: #FFF;
+
+}
+
+.text-primary {
+	color: hsl(360, 64%, 55%);
+}
+
+.margin-top-lg {
+	margin-top: 4rem;
+}
+
+/* 3. header */
+
+.main-header {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.main-header .flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo img {
+	width: 70px;
+}
+
+.main-header nav .nav-menu {
+	display: flex;
+}
+
+.main-header nav .nav-menu .nav-menu-item {
+	margin-right: 1.5rem;
+}
+
+.main-header nav .nav-menu .nav-menu-item:last-child {
+	margin-right: 0;
+}
+
+/* 4. page hero */
+
+.page-hero {
+	text-align: center;
+}
+
+.page-hero .sub-heading {
+	font-size: 14px;
+	margin-bottom: 0.25rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.page-hero h1 {
+	font-size: 48px;
+}
+
+.page-hero form {
+	display: inline-flex;
+	justify-content: center;
+	margin-top: 2rem;
+	box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+
+.page-hero form .select-wrapper {
+	background-color: #FFF;
+	border-bottom-left-radius: 0.25rem;
+	border-top-left-radius: 0.25rem;
+	padding-left: 1.5rem;
+}
+
+.page-hero form .select-wrapper .select-icon {
+	color: hsl(41, 8%, 78%);
+	vertical-align: -3px;
+}
+
+.page-hero form .search-wrapper {
+	background-color: #FFF;
+	border-bottom-right-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+	padding-right: 1.5rem;
+}
+
+.page-hero form .select-wrapper select,
+.page-hero form .search-wrapper input[type='search'] {
+	border: 2px solid #FFF;
+	outline: none;
+	height: 4rem;
+	color: inherit;
+}
+
+.page-hero form .search-wrapper input[type='search'] {
+	width: 40vw;
+	padding-left: 2rem;
+}
+
+.page-hero form .search-wrapper .search-icon {
+	color: hsl(360, 64%, 55%);
+	vertical-align: -3px;
+}
+
+
+/* 5. books list */
+
+.books-list .grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	grid-gap: 1.5rem;
+	gap: 1.5rem;
+	justify-content: space-between;
+}
+
+
+.books-list .book-item .book-image {
+	width: 100%;
+	border-radius: 0.25rem;
+	-webkit-border-radius: 0.25rem;
+	-moz-border-radius: 0.25rem;
+	-ms-border-radius: 0.25rem;
+	-o-border-radius: 0.25rem;
+	box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+
+.books-list .book-item .book-title {
+	font-size: 14px;
+	margin-top: 0.25rem;
+}
+
+.books-list .book-item .book-title a {
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.books-list .book-item .book-title a:hover {
+	color: hsl(42, 87%, 55%);
+}
+
+.books-list .book-item .author-title {
+	font-size: 12px;
+}
+
+/* 6. footer */
+
+footer {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
