@@ -21,6 +21,16 @@
     gap: 2rem;
 }
 
+@media (max-width: 900px) {
+    .book .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-images {
+        text-align: center;
+    }
+}
+
 .book .book-detail h1 {
     margin-bottom: 0.25rem;
 }
