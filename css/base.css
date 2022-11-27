@@ -137,6 +137,7 @@ ul {
 	outline: none;
 	height: 4rem;
 	color: inherit;
+	background-color: #fff;
 }
 
 .page-hero form .search-wrapper input[type='search'] {
